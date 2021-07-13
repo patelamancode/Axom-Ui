@@ -5,28 +5,35 @@
 
 
 /* Avatar */
+.avatar-component{
+    display: flex;
+    flex-direction: row;
+    
+}
 .avatar{
     border-radius: 50%; 
     border: 0.5px solid grey;
     box-shadow: 2px 2px 8px black;
+    margin: 1em;
+    
 }
 
 .avatar.sm{
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
 
 }
 
 .avatar.lg {
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
 }
 
 /* Alert */
 .alert{
     display: flex;
     border: 1px solid;
-    
+    margin: 1em;
 }
 
 .alert > i{
@@ -37,53 +44,60 @@
 }
 .error{
     color: rgb(250, 179, 174);
-    background: rgb(24, 6, 5);
+    /* background: rgb(24, 6, 5); */
+    border: 1px solid rgb(250, 179, 174);
 
 }
 .warning{
     color: rgb(255, 213, 153);
-    background: rgb(25, 15, 0);
+    /* background: rgb(25, 15, 0); */
+    border: 1px solid rgb(255, 213, 153);
 }
 .info{
     color: #2196f3;
-    background: rgb(3, 14, 24);
+    /* background: rgb(3, 14, 24); */
+    border: 1px solid #2196f3;
 }
 .success{
     color: #4caf50;
-    background: rgb(7, 17, 7);
+    /* background: rgb(7, 17, 7); */
+    border: 1px solid #4caf50;
 }
 
+
 /* badges */
+.badge-box{
+    display: flex;
+    flex-direction: row;
+}
 .badge-container > i{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .badge-container {
     position: relative;
-    display:inline-block;
-}
-.icon-badge{
-
+    padding: 1em;
 }
 .badge{
     position: absolute;
-    right: 0;
-    top: 0;
+    top: 9px;
+    right: 12px;
     color: white;
     background-color: red;
     border: 1px solid white;
     border-radius: 50%;
     padding: 0.1rem;
-    font-size: xx-small;
+    font-size: 0.5em;
 }
-.badge.primary{
-    background-color: rgba(35, 179, 30, 0.534);
+.badge-container > .sm{
+    margin: 0;
+    position: relative;
 }
-.badge.secondary{
-    background-color: #020d1677;
+.badge-container > .avatar-badge{
+    position: absolute;
+    top: 12px;
+    right: 13px;
 }
-.badge.ternary{
-    background-color: #f13232b9;
-}
+
 /* buttons */
 .btn{
     color: rgba(0, 0, 0, 0.87)    ;
@@ -212,6 +226,7 @@
     top: 0.5em;
     right: 0.5em;
     font-size: 1rem;
+    cursor: pointer;
 }
 .thumbnail > img{
     width: 100%;
@@ -220,12 +235,16 @@
     position: absolute;
     left: 0.5em;
     top: 0.4em;
+    cursor: pointer;
 }
 .card-content{
     padding: 0rem 1rem;
 }
 .card-content > p{
     margin: 0;
+}
+.card-component > button{
+    cursor: pointer;
 }
 .card-component > button:hover{
     background-color: rgba(23, 23, 199, 0.342);
@@ -379,8 +398,10 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid black;
-    position :relative;
-
+    position :relative; 
+}
+.navbar-content > .nav-item{
+    padding-bottom: 1rem;
     
 }
 .nav-icon{

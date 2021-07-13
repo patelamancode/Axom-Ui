@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
 body{
     font-family: 'Montserrat', sans-serif;
     height: auto;
     width: 100%;
     margin: 0;
     padding: 0;
-    
+    background-color: rgb(250, 250, 245);
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 .navigation{
-    top: 0;
-    left: 0;
     width: 100%;
     height: 6.5rem;
 }
@@ -22,22 +27,56 @@ body{
 #lib-container{
     display: grid;
     grid-template-columns: 0.5fr 3fr;
+    width: 100%;
 }
+/* sidebar */
 .side-menu{
    border-right: 1px solid black;
     min-width: 10rem;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
 }
 .lib-sidebar{
-    display: flex;
-    flex-direction: column;
+    background-color: white;
+    z-index: 99;
+    padding: 1em;
     position: fixed;
-    justify-content: center;
     min-width: 5rem;
 }
 .lib-sidebar > ul{
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
+}
+.lib-sidebar > ul > li{
+    margin: 3px;
 }
 a{
     text-decoration: none;
     padding-bottom: 10px;
 }
+/* main-bar */
+.lib-main-bar{
+    padding: 2em;
+    border-left: 1px solid black;
+    width: 100%;
+    grid-template-columns: 100%;
+}
+.lib-main-bar > h1{
+    margin-bottom: 1em;
+    /* font-variant: small-caps; */
+}
+pre{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(182, 182, 182, 0.342);
+    color: rgba(255, 0, 0, 0.562);
+    overflow-y: hidden; 
+    padding: 0.8em 0;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+

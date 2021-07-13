@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="library.css">
     <title>Axom-UI</title>
@@ -77,7 +78,344 @@
             </div>
         </div>
         <div class="lib-main-bar">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto omnis quidem sint. Pariatur aspernatur nemo itaque voluptatum nostrum rem deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, id hic incidunt dolores quos totam quas commodi voluptas, magni natus aliquam doloremque ullam eaque perspiciatis cupiditate sunt, modi tenetur officia debitis ab nesciunt ipsam nihil quia? Architecto illum aut dicta blanditiis ea incidunt sed quasi dolorem debitis ipsa distinctio fugiat excepturi modi ducimus repellendus explicabo officiis, totam, recusandae nulla tenetur voluptatum. Quos minima enim officia velit, accusamus officiis. Assumenda accusantium nam qui nisi. Vel assumenda voluptas quas sapiente illum molestias? Sed est soluta vero dolorum, officiis tempore aliquam, consequatur temporibus architecto cumque magnam, fugiat hic id sint quo sit aperiam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eos ipsam veniam dicta illo fuga, laborum qui, ipsum numquam, quisquam reprehenderit? Optio natus sunt obcaecati doloremque quae officia? Molestias beatae harum dolor? Fugiat quibusdam impedit, sit praesentium possimus commodi. Mollitia sapiente voluptate quidem exercitationem incidunt enim ipsum totam beatae placeat est odio, dolorum nesciunt vel debitis eos quisquam adipisci. Esse dolores eum earum quaerat, dolorem enim ea voluptatibus libero nisi optio officiis nostrum dolore animi laborum similique sed iure. Atque, sint beatae aperiam ipsum fuga dicta ad amet autem illo maxime eum qui iure numquam veritatis harum reiciendis perspiciatis non quaerat vero ipsam recusandae sit excepturi! Explicabo voluptate excepturi, reprehenderit harum perferendis repellat. Doloribus vitae earum obcaecati quas amet natus fuga! Quas sed maxime enim sapiente amet laboriosam harum, ad id fuga ab fugiat. Quod sapiente consectetur nisi, velit pariatur incidunt placeat fuga facilis sunt ratione error. Voluptates ea nulla nemo ducimus fugit ut laborum laudantium animi dolorem iste sapiente dolores vitae aliquid quis voluptas odio assumenda exercitationem ipsam repellat, laboriosam reprehenderit! Expedita odio consequatur ex tenetur eveniet amet officia quia aliquid corrupti cupiditate voluptates soluta blanditiis, quibusdam dolore tempore dicta magnam perferendis unde sit quisquam quae saepe eaque itaque.
+            <h1>Welcome to Axom UI from level-zero</h1>
+            <p>To import this library type 👇 below link in HTML file<pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://axom-ui-comps-test.netlify.app/&quot;&gt;</pre></p>
+            <p class="components">
+                In this library we use some google-font like Montserrat, sans-serif,you direcly import url in your css file given 👇 below<pre>@import url(&quot;https://fonts.googleapis.com/css2?family=Montserrat&display=swap&quot;)</pre>
+            </p>
+            <p class="components">
+                For icons we use here Font-Awesome Icons, Smake sure you import this first from given link 👇 given below.<pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://pro.fontawesome.com/releases/v5.10.0/css/all.css&quot;&gt;</pre>
+            </p>
+            
+            <!-- Avatar -->
+            <div id="avatar">
+                <h2 class="components">Avatar</h2>
+                <p class="components">An avatar represents many role like (it uses as a profile picture,user picture, icon picture or many uses),So it completly depends on user. It has 2D as well as 3D usage like for social media icon, etc..</p>
+                <div class="avatar-component">
+                        <img class="sm avatar" src="https://pbs.twimg.com/profile_images/1404334078388670466/DgO3WL4S_400x400.jpg" alt="profile-picture"/>
+                    <img class="lg avatar" src="https://pbs.twimg.com/profile_images/1404334078388670466/DgO3WL4S_400x400.jpg" alt="profile-picture"/>
+                </div>
+                <pre>&lt;img class=&quot;sm avatar&quot src=&quot;https://pbs.twimg.com/profile_images/1404334078388670466/DgO3WL4S_400x400.jpg&quot;</pre>
+                <pre>&lt;img class=&quot;lg avatar&quot src=&quot;https://pbs.twimg.com/profile_images/1404334078388670466/DgO3WL4S_400x400.jpg&quot;</pre>
+            </div>
+            <!-- Alerts -->
+            <div id="alert"">
+                <h2 class="components">Alert</h2>
+                <p class="components">This is an alert message for various purposes like showing warnings,errors,info message,etc..</p>
+                <div class="alert error">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>This is an error alert — check it out!
+                    </p>
+                </div>
+                <div class="alert warning">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>This is a warning alert — check it out!
+                    </p>
+                </div>
+                <div class="alert info">
+                    <i class="fas fa-info-circle"></i>
+                    <p>This is an info alert — check it out!
+                    </p>
+                </div>
+                <div class="alert success">
+                    <i class="fas fa-check-circle"></i>
+                    <p>This is a success alert — check it out!
+                    </p>
+                </div>
+                <p class="components">I personaly use Font-Awesome for these alerts,so please make sure first import it from above link..
+                </p>
+                <pre>
+                    &lt;div class=&quot;alert error&quot;&gt;
+                     &lt;i class=&quot;fas fa-exclamation-circle&quot;&gt;&lt;/&gt;
+                     &lt;p&gt;This is an error alert — check it out!&lt;/&gt;
+                    &lt;/div&gt;  
+                </pre>
+                <pre>
+                    &lt;div class=&quot;alert warning&quot;&gt;
+                     &lt;i class=&quot;fas fa-exclamation-triangle&quot;&gt;&lt;/&gt;
+                     &lt;p&gt;This is a warning alert — check it out!&lt;/&gt;
+                    &lt;/div&gt; 
+                </pre>
+                <pre>
+                    &lt;div class=&quot;alert info&quot;&gt;
+                     &lt;i class=&quot;fas fa-info-circle&quot;&gt;&lt;/&gt;
+                     &lt;p&gt;This is a info alert — check it out!&lt;/&gt;
+                    &lt;/div&gt;
+                </pre>
+                <pre>
+                    &lt;div class=&quot;alert success&quot;&gt;
+                     &lt;i class=&quot;fas fa-check-circle;&gt;&lt;/&gt;
+                     &lt;p&gt;This is a success alert — check it out!&lt;/&gt;
+                    &lt;/div&gt;
+                </pre>
+            </div>
+            <!-- Badge -->
+            <div id="badge"">
+                <h2 class="components">Badge</h2>
+                <p class="components">
+                    Badges are very popular to use different places for representing number of counts repeated
+                </p>
+                <p class="components">
+                    I use Font-Awesome Icons here so please make sure to import these icons as well.
+                </p>
+                <div class="badge-box">
+                    <div class="badge-container">
+                        <i class="fas fa-bell"></i>
+                        <div class="badge">06</div>
+                    </div>
+                    <div class="badge-container">
+                        <i class="fas fa-phone"></i>
+                        <div class="badge">11</div>
+                    </div>
+                    <div class="badge-container">
+                        <i class="fas fa-cart-plus"></i>
+                        <div class="badge">97</div>
+                    </div>
+                    <div class="badge-container">
+                        <i class="fas fa-sms"></i>
+                        <div class="badge">97</div>
+                    </div>
+                    <div class="badge-container">
+                        <img class="sm avatar" src="https://pbs.twimg.com/profile_images/1404334078388670466/DgO3WL4S_400x400.jpg" alt="profile-picture"/>
+                        <div class="avatar-badge badge">06</div>
+                    </div>
+                </div>
+                <pre>
+                    &lt;div class=&quot;badge-container&quot;&gt;
+                     &lt;i class=&quot;fas fa-bell;&gt;&lt;/&gt;
+                     &lt;div class=&quot;badge&quot;&gt;06&lt;/div&gt;
+                    &lt;/div&gt;
+                </pre>  
+                <pre>
+                    &lt;div class=&quot;badge-container&quot;&gt;
+                     &lt;i class=&quot;fas fa-phone;&gt;&lt;/&gt;
+                     &lt;div class=&quot;badge&quot;&gt;11&lt;/div&gt;
+                    &lt;/div&gt;
+                </pre>
+                <pre>
+                    &lt;div class=&quot;badge-container&quot;&gt;
+                     &lt;i class=&quot;fas fa-cart-plus;&gt;&lt;/&gt;
+                     &lt;div class=&quot;badge&quot;&gt;97&lt;/div&gt;
+                    &lt;/div&gt;
+                </pre>
+                <pre>
+                    &lt;div class=&quot;badge-container&quot;&gt;
+                     &lt;i class=&quot;fas fa-sms;&gt;&lt;/&gt;
+                     &lt;div class=&quot;badge&quot;&gt;97&lt;/div&gt;
+                    &lt;/div&gt;
+                </pre> 
+                <pre>
+                    &lt;div class=&quot;badge-container&quot;&gt;
+                     &lt;img class=&quot;sm avatar;&gt;&lt;/&gt;
+                     &lt;div class=&quot;avatar-badge badge&quot;&gt;06&lt;/div&gt;
+                    &lt;/div&gt;
+                </pre> 
+            </div>
+            <!-- Buttons -->
+            <div id="button">
+                <h2 class="components">Buttons</h2>
+                <p class="components">
+                    Buttons are mostly using element to interacting with any UI and it allows user to take action with only a single click.. 
+                </p>
+                <p class="components">
+                    User to user only types of buttons being changed rest intereaction remains same for the user
+                </p>
+                <p class="components">
+                    Few off them are given below..
+                </p>
+                <div class="button-container">
+                    <div class="contained-btn">
+                        <h3>Contained button</h3>
+                        <p class="components">
+                            Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
+                        </p>
+                        <button class="btn">DEFAULT</button>
+                        <button class="btn primary">PRIMARY</button>
+                        <button class="btn secondary">SECONDARY</button>
+                        <button class="btn link"><a href="">LINK</a></button>
+                        <button disabled class="btn disable">DISABLED</button>
+                    </div>
+                    <pre>
+                        &lt;button class=&quot;btn&quot;&gt;DEFAULT&lt;/button&gt;
+                    </pre>
+                    <pre>
+                        &lt;button class=&quot;btn&quot;&gt;PRIMARY&lt;/button&gt;
+                    </pre>
+                    <pre>
+                        &lt;button class=&quot;btn&quot;&gt;SECONDARY&lt;/button&gt;
+                    </pre>
+                    <pre>
+                        &lt;button class=&quot;btn&quot;&gt;LINK&lt;/button&gt;
+                    </pre>
+                    <pre>
+                        &lt;button class=&quot;btn&quot;&gt;DISABLED&lt;/button&gt;
+                    </pre>
+                    <div class="icon-button">
+                        <h3>Icon button</h3>
+                        <p class="components">
+                            Sometimes you might want to have icons for certain button to enhance the UX of the application as we recognize logos more easily than plain text
+                        </p>
+                        <button class="icon-btn">X</button>
+                        <button class="icon-btn">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                        <button class="icon-btn"><i class="fas fa-cart-plus"></i></button>
+                        <button class="icon-btn"><i class="fas fa-user"></i></button>
+                        <button class="icon-btn"><i class="fas fa-heart"></i></button>
+                    </div>
+                    <pre>
+                        &lt;button class=&quot;icon-btn&quot;&gt;X&lt;/button&gt;
+                    </pre>
+                    <pre>
+                        &lt;button class=&quot;icon-btn&quot;&lt;i class=&quot;fas fa-trash&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                    </pre>
+                    <pre>
+                        &lt;button class=&quot;icon-btn&quot;&lt;i class=&quot;fas fa-cart-plus&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                    </pre>
+                    <pre>
+                        &lt;button class=&quot;icon-btn&quot;&lt;i class=&quot;fas fa-user&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                    </pre>
+                    <pre>
+                        &lt;button class=&quot;icon-btn&quot;&lt;i class=&quot;fas fa-heart&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                    </pre>
+                    <div class="outlined-btn">
+                        <h3>Outlined button</h3>
+                        <p class="components">
+                            Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
+                        </p>
+                        <p class="components">
+                            Outlined buttons are also a lower emphasis alternative to contained buttons, or a higher emphasis alternative to text buttons.
+                        </p>
+                        <button class="outline-btn default">DEFAULT</button>
+                        <button class="outline-btn primary">PRIMARY</button>
+                        <button class="outline-btn secondary">SECONDARY</button>
+                        <button class="outline-btn link"><a href="">LINK</a></button>
+                        <button disabled class="outline-btn disable">DISABLED</button>
+                    </div>
+                    <pre>
+                        &lt;button class=&quot;outline-btn default&quot;&gt;DEFAULT&lt;/button&gt;
+                    </pre>
+                    <pre>
+                        &lt;button class=&quot;outline-btn primary&quot;&gt;PRIMARY&lt;/button&gt;
+                    </pre>
+                    <pre>
+                        &lt;button class=&quot;outline-btn secondary&quot;&gt;SECONDARY&lt;/button&gt;
+                    </pre>
+                    <pre>
+                        &lt;button class=&quot;outline-btn link&quot;&gt;LINK&lt;/button&gt;
+                    </pre>
+                    <pre>
+                        &lt;button class=&quot;outline-btn disable&quot;&gt;DISABLED&lt;/button&gt;
+                    </pre>
+                    <div class="float-button">
+                        <h3>Floating action button</h3>
+                        <p class="components">
+                            A floating action button appears in front of all screen content, typically as a circular shape with an icon in its center. FABs come in two types: regular, and extended.
+                        </p>
+                        <p class="components">
+                            Only one floating action button is recommended per screen to represent the most common action.
+                        </p>
+                        <button class="float-btn"><a href="">+</a></button>
+                    </div>
+                    <pre>
+                        &lt;button class=&quot;float-btn&quot;&gt;&lt;a href=&quot;&quot;&gt;+&lt;/a&gt;&lt;/button&gt;
+                    </pre>
+                </div>
+            </div>
+            <!-- Cards -->
+            <div id="card">
+                <h2>Cards</h2>
+                <p class="components">
+                    Cards are very common element which can use everywhere in any e-commerce app, social media app,any other video library too many things where we can use this card.
+                </p>
+                <div class="card-container">
+                    <div class="card-component">
+                        <div class="thumbnail">
+                            <img src="https://rukminim1.flixcart.com/image/416/416/kpbipow0/office-study-chair/o/h/o/1-plywood-we-13-white-clouds-enterprise-original-imag3kzzptvgbn5y.jpeg?q=70" alt=""/>
+                            <i class="fas fa-times"></i>
+                            <i class="far fa-heart like"></i>
+                        </div>
+                        <div class="card-content">
+                            <p>Rajpura Oscar High Back Revolving Chair with Headrest a...</p>
+                            <h4>Gaming chair</h4>
+                            <p>Rs. 4000/-</p>
+                        </div>
+                        <button class="card-btn"
+                        >
+                        Buy now
+                        </button>
+                    </div>
+                    <div class="card-component">
+                        <div class="thumbnail">
+                            <img src="https://rukminim1.flixcart.com/image/416/416/kpbipow0/office-study-chair/o/h/o/1-plywood-we-13-white-clouds-enterprise-original-imag3kzzptvgbn5y.jpeg?q=70" alt=""/>
+                            <i class="fas fa-times"></i>
+                            <i class="far fa-heart like"></i>
+                            <div class="card-badge">New<i class="fas fa-sparkles"></i>   
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p>Rajpura Oscar High Back Revolving Chair with Headrest a...</p>
+                            <h4>Gaming chair</h4>
+                            <p> Rs. 4000/-</p>
+                        </div>
+                        <button class="card-btn"
+                        >
+                        Buy now
+                        </button>
+                    </div>
+                    <div class="card-component card-shadow">
+                        <div class="card-content">
+                            <h2>Heading1</h2>
+                            <h3>Sub-heading</h3>
+                            <p>Rajpura Oscar High Back Revolving inventore, vitae vel quas Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat earum et veritatis officia odio consequuntur.</p>
+                        </div>
+                        <button  class="read-btn">read more....</button>
+                    </div>
+                </div>
+                <pre>
+                    &lt;div class=&quot;card-component&quot;&gt;
+                        &lt;div class=&quot;thumbnail&quot;&gt;
+                            &lt; img src=&quot;https://rukminim1.flixcart.com/image/416/416/kpbipow0/office-study-chair/o/h/o/1-plywood-we-13-white-clouds-enterprise-original-imag3kzzptvgbn5y.jpeg?q=70&quot;/&gt;
+                            &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/&gt;
+                            &lt;i class=&quot;far fa-heart like&quot;&gt;&lt;/&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;card-content&quot;&gt;
+                            &lt;p&gt;Rajpura Oscar High Back Revolving Chair with Headrest a...&lt;/p&gt;
+                            &lt;h4&gt;Gaming chair&lt;/h4&gt;
+                            &lt;p&gt;Rs. 4000/-&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;button class=&quot;card-btn&quot;&gt;Buy now&lt;/button&gt;
+                    &lt;/div&gt;
+                </pre>
+                <pre>
+                    &lt;div class=&quot;card-component&quot;&gt;
+                    &lt;div class=&quot;thumbnail&quot;&gt;
+                        &lt; img src=&quot;https://rukminim1.flixcart.com/image/416/416/kpbipow0/office-study-chair/o/h/o/1-plywood-we-13-white-clouds-enterprise-original-imag3kzzptvgbn5y.jpeg?q=70&quot;/&gt;
+                        &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/&gt;
+                        &lt;i class=&quot;far fa-heart like&quot;&gt;&lt;/&gt;
+                        &lt;div class=&quot;card-badge&quot;&gt;New &lt;i class=&quot;fas fa-sparkles&quot;&gt;&lt;/&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card-content&quot;&gt;
+                        &lt;p&gt;Rajpura Oscar High Back Revolving Chair with Headrest a...&lt;/p&gt;
+                        &lt;h4&gt;Gaming chair&lt;/h4&gt;
+                        &lt;p&gt;Rs. 4000/-&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;button class=&quot;card-btn&quot;&gt;Buy now&lt;/button&gt;
+                &lt;/div&gt;
+                </pre>
+                <pre>
+                    &lt;div class=&quot;card-component card-shadow&quot;&gt;
+                        &lt;div class=&quot;card-content&quot;&gt;
+                            &lt;h2&gt;Heading1&lt;/h2&gt;
+                            &lt;h3&gt;Sub-heading1&lt;/h3&gt;
+                            &lt;p&gt;Rajpura Oscar High Back Revolving inventore, vitae vel quas Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat earum et veritatis officia odio consequuntur.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;button class=&quot;read-btn&quot;&gt;read more...&lt;/button&gt;
+                    &lt;/div&gt;
+                </pre>
+            </div>
+            <!-- Images -->
+            
         </div>
     </div>
 </body>
