@@ -21,13 +21,13 @@ body{
     width: 100vw;
     position: fixed;
     background-color: white;
-    z-index: 9999;
+    z-index: 1;
 }
 
 #lib-container{
     display: grid;
     grid-template-columns: 0.5fr 3fr;
-    width: 100%;
+    width: auto;
 }
 /* sidebar */
 .side-menu{
@@ -51,6 +51,7 @@ body{
 }
 .lib-sidebar > ul > li{
     margin: 3px;
+    cursor: pointer;
 }
 a{
     text-decoration: none;
@@ -72,8 +73,8 @@ pre{
     justify-content: center;
     background-color: rgba(182, 182, 182, 0.342);
     color: rgba(255, 0, 0, 0.562);
-    overflow-y: hidden; 
-    padding: 0.8em 0;
+    overflow: auto;
+    padding: 1em;
     align-items: center;
     width: 100%;
     height: auto;
